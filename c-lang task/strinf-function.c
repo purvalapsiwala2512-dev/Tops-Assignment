@@ -8,6 +8,7 @@ main(){
 	printf("\n upper case=%s",str);
 	strrev(str);
 	printf("\n rev str=%s",str);
-	//strlwr(str);
+	strlwr(str);
+	printf("\n lower case=%s",str);
 	printf("\n strcmp =%d",strcmp("abc","acd"));
 }

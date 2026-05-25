@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 main(){
 	int a[2][2],i,j;
 	printf("\n Enter 2d matrix \n");

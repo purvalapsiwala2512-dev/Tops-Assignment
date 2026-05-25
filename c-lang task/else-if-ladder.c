@@ -1,4 +1,4 @@
-#include<stdio.h>
+  #include<stdio.h>
 main(){
 	int x1,x2;
 	printf("ENTER THE VALUE OF x1 and x2");

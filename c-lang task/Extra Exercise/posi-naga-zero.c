@@ -1,6 +1,5 @@
-#include <stdio.h>
-
-int main() {
+#include<stdio.h>
+int main(){
     double num;
     printf("Enter the number");
     scanf("%lf", &num);

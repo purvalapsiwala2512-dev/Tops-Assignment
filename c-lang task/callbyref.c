@@ -4,7 +4,6 @@ void swap(int *a,int *b){
 	int temp=*a;//10
 	*a=*b;
 	*b=temp;
-
 }
 main(){
 	int a=10,b=20;
