@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main() {
+int main(){
     int a[5] = {23, 34, 56, 76, 54};
     int i, j, temp;
 
@@ -15,7 +15,6 @@ int main() {
             }
         }
     }
-    
     printf("Sorted Array:");
     for(i = 0; i < 5; i++) {
         printf("\n a[%d] = %d", i, a[i]);

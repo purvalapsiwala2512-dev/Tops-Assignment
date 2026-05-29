@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main() {
 	int i,j,k;
     int A[2][2] = {{1, 2}, {3, 4}};

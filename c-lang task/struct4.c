@@ -7,14 +7,12 @@ struct Description{
 	char Brand[10];
 	struct Materials m1;
 };
-
 struct Product{
 	int pid;
 	char pname[10];
 	struct Description d1;
 	struct Materials m1;
 };
-
 main(){
 	struct Product p1;
 	printf("\n Enter pid and pname");
