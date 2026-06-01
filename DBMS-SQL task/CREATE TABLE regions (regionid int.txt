@@ -1,0 +1,26 @@
+CREATE TABLE regions (regionid int AUTO_INCREMENT PRIMARY KEY,regionName varchar(25));
+
+
+
+CREATE TABLE countries (countryid int AUTO_INCREMENT PRIMARY KEY,countryName varchar(40),rid int ,FOREIGN KEY(rid) REFERENCES regions(regionid));
+
+
+
+CREATE TABLE locations (locationid int AUTO_INCREMENT PRIMARY KEY,streetaddress varchar(25), postaladresss varchar(12), city varchar(30), stateprovince varchar(12),cid int , FOREIGN KEY(cid) REFERENCES countries(countryid));
+
+
+
+CREATE TABLE departments (departmentid int AUTO_INCREMENT PRIMARY KEY,departmentname varchar(30), managerid int,lid int, FOREIGN KEY(lid) REFERENCES locations(locationid));
+
+
+
+CREATE TABLE jobs (jobid int AUTO_INCREMENT PRIMARY KEY,jobtitle varchar(35),minsalary int,maxsalary int);
+
+
+
+CREATE TABLE employees (employeeid int AUTO_INCREMENT PRIMARY KEY,firstname varchar(20), lastname varchar(25),email varchar(30), phonenumber varchar(20),hiredate datetime,jid int, FOREIGN KEY(jid) REFERENCES jobs(jobid),salary int,commissionpct int,managerid int,did int, FOREIGN KEY(did) REFERENCES departments(departmentid));
+
+
+
+
+CREATE TABLE jobhistory (eid int, FOREIGN KEY(eid) REFERENCES employees(employeeid),jid int, FOREIGN KEY(jid) REFERENCES jobs(jobid),did int, FOREIGN key(did) REFERENCES departments(departmentid));
