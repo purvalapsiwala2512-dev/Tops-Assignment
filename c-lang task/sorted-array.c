@@ -7,7 +7,7 @@ int main(){
     for(i = 0; i < 5; i++) {
         for(j = i + 1; j < 5; j++) {
             // Change '>' to '<' if you want descending order
-            if(a[i] <  a[j]) {
+            if(a[i] < a[j]) {
                 // Classic swap using a temporary variable
                 temp = a[i];
                 a[i] = a[j];

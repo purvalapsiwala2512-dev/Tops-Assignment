@@ -1,0 +1,14 @@
+CREATE DATABASE march19db;
+
+use march19db;
+CREATE TABLE students (studentId int AUTO_INCREMENT PRIMARY KEY,studentName varchar(30),email varchar(40),address varchar(100),zipcode int);
+
+CREATE TABLE cources (cid int AUTO_INCREMENT PRIMARY KEY,cname varchar(20), duration varchar(30), fees float);
+
+CREATE TABLE student_cources(scid int AUTO_INCREMENT PRIMARY KEY,sid int ,cid int ,regdate datetime , FOREIGN KEY(sid) REFERENCES students(studentId) , FOREIGN KEY (cid) REFERENCES cources(cid))
+
+ALTER TABLE students add COLUMN dob datetime;
+
+ALTER TABLE students DROP COLUMN dob;
+
+DROP TABLE student_cources;

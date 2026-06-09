@@ -1,0 +1,32 @@
+insert update delete
+
+INSERT INTO students(studentName,email,address,zipcode)VALUES("Vruti","vruti@gmail.com","101 main street vyara","394650");
+INSERT INTO students(studentName,email,address,zipcode)VALUES("Purv","purv@gmail.com","101 main street surat","395007");
+INSERT INTO students(studentName,email,address,zipcode)VALUES("Dipesh","d@gmail.com","dindoli main street surat","395007");
+INSERT INTO students(studentName,email,address,zipcode)VALUES("hasib","h@gmail.com","101 main street surat","395007");
+INSERT INTO students(studentName,email,address,zipcode)VALUES("om","om@gmail.com","101 main street vyara","395007");
+INSERT INTO students(studentName,email,address,zipcode)VALUES("manoj","manoj@gmail.com","101 main street vyara","395007");
+
+UPDATE students SET address = "101 main steert nanpura" where studentId=1
+
+UPDATE students SET address = "101 main street gopipura" where studentId=6
+
+
+
+DELETE FROM students WHERE studentId=6
+
+
+INSERT into cources(cname,duration,fees)VALUES('Java','8 month','65000');
+INSERT into cources(cname,duration,fees)VALUES('Python','4 Month','50000');
+INSERT into cources(cname,duration,fees)VALUES('PHP','6 Month','35000');
+INSERT into cources(cname,duration,fees)VALUES('React','5 Month ','40000');
+INSERT into cources(cname,duration,fees)VALUES('Node','3 Month','25000');
+
+
+INSERT INTO student_cources(sid,cid,regdate)VALUES(1,1,"01-05-2026");
+INSERT INTO student_cources(sid,cid,regdate)VALUES(2,2,"12-03-2025");
+INSERT INTO student_cources(sid,cid,regdate)VALUES(3,1,"13-09-2025");
+INSERT INTO student_cources(sid,cid,regdate)VALUES(4,1,"06-08-2025");
+INSERT INTO student_cources(sid,cid,regdate)VALUES(5,2,"09-09-2025");
+INSERT INTO student_cources(sid,cid,regdate)VALUES(7,3,"09-08-2025");
+INSERT INTO student_cources(sid,cid,regdate)VALUES(8,4,"07-07-2025");

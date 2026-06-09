@@ -1,0 +1,59 @@
+DQL => data query lang.
+
+select:SELECT * FROM students;
+
+SELECT * FROM students where studentName="dipesh";
+
+SELECT studentName,email FROM students where studentName="dipesh";
+
+select studentName from students
+
+select studentName as STUDNETNAME from students;
+
+SELECT DISTINCT(studentName)  FROM `students` 
+
+SELECT *  FROM `students` ORDER BY studentName ASC;
+SELECT *  FROM `students` ORDER BY studentName DESC;
+
+SELECT * from employee where city="Surat" and salary>=45000
+SELECT * from employee where city="Surat" OR salary>=65000;
+SELECT * from employee where not city = "Surat" 
+
+SELECT * FROM `employee` LIMIT 0,5
+
+SELECT * FROM `employee` ORDER BY salary DESC LIMIT 1,1;
+
+
+SELECT sum(salary) as TotalSalary from employee;
+SELECT min(salary) as MinimumSalary from employee;
+SELECT max(salary) as MaximumSalary from employee;
+SELECT COUNT(empid) as SuratEmp from employee where city="Surat";
+SELECT AVG(salary) as SuratEmpAVg from employee where city="Surat";
+
+
+
+=======================
+
+
+SELECT * FROM `employee` WHERE name like 'a%';
+SELECT * FROM `employee` WHERE  name like '%n';
+SELECT * FROM `employee` WHERE  name like '%n%';
+
+SELECT * FROM `employee` WHERE city in ('Surat','Ahmedabad','Rajkot',"Bareli)
+
+SELECT * FROM `employee` WHERE city not in ('Surat','Ahmedabad','Rajkot',"Bareli");
+SELECT * FROM `employee` WHERE salary BETWEEN 50000 AND 80000
+
+SELECT * from student_cources join students ON student_cources.sid = students.studentId
+SELECT * from student_cources left  join students ON student_cources.sid = students.studentId
+SELECT * from student_cources right  join cources ON student_cources.cid = cources.cid
+SELECT * from student_cources   full join cources 
+
+SELECT * FROM `student_cources` join students ON student_cources.sid = students.studentId join cources ON student_cources.cid = cources.cid;
+SELECT count(scid),cources.cname FROM `student_cources` join students ON student_cources.sid = students.studentId join cources ON student_cources.cid = cources.cid GROUP BY cources.cname;
+
+SELECT count(empid),city FROM  employee GROUP BY city;
+
+SELECT sum(salary) as totalSalaryCityWise,city FROM  employee GROUP BY city;
+
+SELECT sum(salary) as totalSalaryCityWise,city FROM employee GROUP BY city HAVING totalSalaryCityWise > 100000;
