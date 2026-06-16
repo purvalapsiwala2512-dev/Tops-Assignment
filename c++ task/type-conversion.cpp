@@ -5,6 +5,6 @@ main(){
 	float div;
 	cout<<"\n Enter value of a and b:";
 	cin>>a>>b;
-	div=a/b;
+	div=(float)a/b;
 	cout<<"\n division="<<div;
 }
