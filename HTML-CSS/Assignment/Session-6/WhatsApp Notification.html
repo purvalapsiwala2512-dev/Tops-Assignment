@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Notification Badge</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            height: 2000px;
+            background: linear-gradient(to bottom, #ffffff, #e5ddd5);
+            padding: 20px;
+        }
+
+        .whatsapp-badge {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Scroll down to see the persistent badge behaviour</h2>
+    <p>The floating action badge in the lower-right remains locked to the window plane even while viewport scrolling occurs.</p>
+
+    <a href="#" class="whatsapp-badge">
+        <span>💬 Chat on WhatsApp</span>
+    </a>
+</body>
+</html>

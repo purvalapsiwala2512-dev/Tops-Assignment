@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flipkart Product Grid</title>
+    <style>
+         body {
+            background-color: #f1f3f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid-header {
+            max-width: 1200px;
+            margin: 0 auto 15px auto;
+            background: #fff;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .product-grid {
+            display: grid;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 16px;
+            grid-template-columns: repeat(3, 1fr); 
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 4px;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            transition: box-shadow 0.2s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .product-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .product-title { font-size: 14px; color: #212121; margin: 8px 0; font-weight: bold; }
+        .product-price { font-size: 16px; color: #388e3c; font-weight: bold; margin: 0; }
+
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-header">
+        <h2>Trending Electronics deals</h2>
+    </div>
+
+    <main class="product-grid">
+        <article class="product-card">
+            <img class="product-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&auto=format&fit=crop" alt="Smart Watch">
+            <h3 class="product-title">Pro Smart Watch Series 8</h3>
+            <p class="product-price">₹2,499</p>
+        </article>
+
+        <article class="product-card">
+            <img class="product-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop" alt="Headphones">
+            <h3 class="product-title">BassOver Wireless Headphones</h3>
+            <p class="product-price">₹1,799</p>
+        </article>
+
+        <article class="product-card">
+            <img class="product-image" src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=300&auto=format&fit=crop" alt="Earbuds">
+            <h3 class="product-title">TrueWireless Earbuds Neo</h3>
+            <p class="product-price">₹999</p>
+        </article>
+
+        <article class="product-card">
+            <img class="product-image" src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=300&auto=format&fit=crop" alt="Power Bank">
+            <h3 class="product-title">20000mAh Fast Charge Power Bank</h3>
+            <p class="product-price">₹1,299</p>
+        </article>
+
+        <article class="product-card">
+            <img class="product-image" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=300&auto=format&fit=crop" alt="Gaming Mouse">
+            <h3 class="product-title">RGB Mechanical Gaming Mouse</h3>
+            <p class="product-price">₹899</p>
+        </article>
+
+        <article class="product-card">
+            <img class="product-image" src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=300&auto=format&fit=crop" alt="Laptop Stand">
+            <h3 class="product-title">Ergonomic Aluminium Laptop Stand</h3>
+            <p class="product-price">₹1,499</p>
+        </article>
+    </main>
+</body>
+</html>

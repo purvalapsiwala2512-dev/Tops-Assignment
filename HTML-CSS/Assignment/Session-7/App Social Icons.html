@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox App Icons Row</title>
+    <style>
+        .icon-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            background-color: #f7f9fa;
+            max-width: 450px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .app-icon:hover {
+            transform: scale(2.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-container">
+        <img class="app-icon" src="https://images.unsplash.com/photo-1611262588024-d12430b98920?w=120&auto=format&fit=crop" alt="Instagram">
+        <img class="app-icon" src="images4.jpg" alt="WhatsApp">
+        <img class="app-icon" src="images5.jpg" alt="Zomato">
+        <img class="app-icon" src="images3.jpg" alt="Spotify">
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Flex Row</title>
+    <style>
+        .playlist-bar {
+            display: flex;
+            gap: 16px;
+            background-color: #000000;
+            padding: 20px;
+            overflow-x: auto;
+            font-family: sans-serif;
+        }
+
+        .song-card {
+            display: flex;
+            align-items: center; 
+            background-color: #181818;
+            min-width: 260px;
+            padding: 10px;
+            border-radius: 6px;
+            gap: 12px;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .song-card:hover {
+            background-color: #282828;
+        }
+
+        .album-art {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .song-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .song-title { color: #ffffff; font-size: 14px; margin: 0 0 4px 0; font-weight: bold; }
+        .artist-name { color: #b3b3b3; font-size: 12px; margin: 0; }
+    </style>
+</head>
+<body>
+    <div class="playlist-bar">
+        <div class="song-card">
+            <img class="album-art" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=100&auto=format&fit=crop" alt="Album Cover">
+            <div class="song-info">
+                <p class="song-title">Midnight Pulse</p>
+                <p class="artist-name">The Nocturnals</p>
+            </div>
+        </div>
+        <div class="song-card">
+            <img class="album-art" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=100&auto=format&fit=crop" alt="Album Cover">
+            <div class="song-info">
+                <p class="song-title">Neon Echoes</p>
+                <p class="artist-name">Synth Wave</p>
+            </div>
+        </div>
+        <div class="song-card">
+            <img class="album-art" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=100&auto=format&fit=crop" alt="Album Cover">
+            <div class="song-info">
+                <p class="song-title">Acoustic Sunsets</p>
+                <p class="artist-name">Clara & The Strings</p>
+            </div>
+        </div>
+        <div class="song-card">
+            <img class="album-art" src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=100&auto=format&fit=crop" alt="Album Cover">
+            <div class="song-info">
+                <p class="song-title">Hyperdrive</p>
+                <p class="artist-name">Velocity 9</p>
+            </div>
+        </div>
+        <div class="song-card">
+            <img class="album-art" src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=100&auto=format&fit=crop" alt="Album Cover">
+            <div class="song-info">
+                <p class="song-title">Golden Hour Chill</p>
+                <p class="artist-name">Lofi Crew</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

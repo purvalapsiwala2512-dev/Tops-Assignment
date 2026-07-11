@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Product Tile</title>
+    <style>
+        .product-tile {
+            display: block;
+            width: 220px;
+            border: 1px solid #f0f0f0;
+            padding: 12px;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        .product-name {
+            display: block; 
+            font-size: 14px;
+            color: #212121;
+            margin: 8px 0 4px 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .price-current {
+            display: inline-block; 
+            font-weight: bold;
+            color: #212121;
+            margin-right: 8px;
+        }
+
+        .price-original {
+            display: inline-block;
+            color: #878787;
+            text-decoration: line-through;
+            font-size: 13px;
+        }
+
+        
+        .hide-price {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+   <div class="product-tile">
+        <img src="wireless-computer-mouse.jpg" alt="Trimmed Wireless Mouse" style="width:100%;">
+        <span class="product-name">Logitech G305 Wireless Mouse</span>
+        
+        <div class="price-container">
+            <span class="price-current">₹2,999</span>
+            <span class="price-original">₹3,795</span>
+        </div>
+    </div> 
+</body>
+</html>

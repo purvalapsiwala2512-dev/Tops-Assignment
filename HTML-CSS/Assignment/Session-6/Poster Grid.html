@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Grid Overlay</title>
+    <style>
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .poster-card {
+            position: relative;
+            width: 200px;
+        }
+
+        .poster-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .badge-new {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: #f84464;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .title { margin: 8px 0 0 0; font-size: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="poster-card">
+            <span class="badge-new">New</span>
+            <img class="poster-img" src="WhatsApp Image1.jpg.jpeg" alt="Movie Thumbnail">
+            <p class="title">Welcome To The Jungle</p>
+        </div>
+
+        <div class="poster-card">
+            <img class="poster-img" src="WhatsApp Image2.jpg.jpeg" alt="Movie Thumbnail">
+            <p class="title">COCKTAIL 2</p>
+        </div>
+    </div>
+</body>
+</html>
